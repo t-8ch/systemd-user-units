@@ -1,0 +1,12 @@
+[Unit]
+Description=i3 service
+After=xorg.target
+Requires=xorg.target
+
+[Service]
+ExecStart=/usr/bin/i3
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=wm.target

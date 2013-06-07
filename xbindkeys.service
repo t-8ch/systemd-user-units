@@ -1,0 +1,10 @@
+[Unit]
+Description=xbindkeys
+After=xorg.service
+
+[Service]
+ExecStart=/usr/bin/xbindkeys -n
+StandardOutput=null
+
+[Install]
+WantedBy=wm.target

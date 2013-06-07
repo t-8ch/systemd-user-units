@@ -1,0 +1,9 @@
+[Unit]
+Description=Pulse Audio Server
+Requires=dbus.socket
+
+[Service]
+ExecStart=/usr/bin/pulseaudio
+
+[Install]
+WantedBy=wm.target

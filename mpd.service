@@ -1,0 +1,6 @@
+[Unit]
+Description=Music Player Daemon
+
+[Service]
+ExecStartPre=/usr/bin/mkdir -p %t/mpd
+ExecStart=/usr/bin/mpd --no-daemon

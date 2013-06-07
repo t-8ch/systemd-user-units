@@ -1,0 +1,5 @@
+[Unit]
+Description=IPython
+
+[Service]
+ExecStart=/usr/bin/ipython notebook --pylab=inline --no-browser --port 4001 %h/.local/share/ipython/

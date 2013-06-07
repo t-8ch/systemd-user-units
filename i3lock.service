@@ -1,0 +1,7 @@
+[Unit]
+Description=i3lock
+
+[Service]
+Type=oneshot
+ExecStartPre=-/usr/bin/mpc stop
+ExecStart=/usr/bin/i3lock -n -d -c 000000

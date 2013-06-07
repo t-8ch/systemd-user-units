@@ -1,0 +1,11 @@
+[Unit]
+Description=xset
+After=xorg.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/xset -b
+
+[Install]
+WantedBy=wm.target

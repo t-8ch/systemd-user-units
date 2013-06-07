@@ -1,0 +1,9 @@
+[Unit]
+Description=syndaemon
+After=xorg.service
+
+[Service]
+ExecStart=/usr/bin/syndaemon -R -d -K -i 1
+
+[Install]
+WantedBy=wm.target

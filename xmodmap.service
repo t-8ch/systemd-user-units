@@ -1,0 +1,11 @@
+[Unit]
+Description=xmodmap
+After=xorg.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/xmodmap
+
+[Install]
+WantedBy=wm.target

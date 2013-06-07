@@ -1,0 +1,11 @@
+[Unit]
+Description=Envoy agent monitor
+
+[Service]
+ExecStart=/usr/bin/envoyd
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=wm.target
+Also=envoy.socket

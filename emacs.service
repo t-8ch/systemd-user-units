@@ -1,0 +1,10 @@
+[Unit]
+Description=Emacs
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/emacs --daemon
+ExecStop=/usr/bin/emacsclient --eval "(progn (setq kill-emacs-hook 'nil) (kill-emacs))"
+
+[Install]
+WantedBy=wm.target
